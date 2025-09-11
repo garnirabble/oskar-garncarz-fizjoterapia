@@ -1,27 +1,59 @@
+
+/* Ustawienia ogólne */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: url("tlo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
 }
 
-header, footer {
-  background: #222;
-  color: white;
+/* Pasek menu */
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
   text-align: center;
-  padding: 1em;
 }
 
 nav a {
   color: #fff;
-  margin: 0 10px;
   text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffcc00;
 }
 
+/* Nagłówki */
+h1, h2 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Główna treść */
 main {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 30px auto;
   padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Stopka */
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
 }
