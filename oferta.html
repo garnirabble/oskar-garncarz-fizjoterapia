@@ -4,34 +4,140 @@
   <meta charset="UTF-8">
   <title>Oferta</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .offer {
+      margin: 20px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .offer:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .offer summary {
+      padding: 15px 20px;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: bold;
+      color: #fff;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+
+    .offer summary::marker {
+      content: "";
+    }
+
+    .offer summary::after {
+      content: "+";
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    .offer-details {
+      padding: 15px 20px;
+      background: #f9f9f9;
+      line-height: 1.5;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+
+    details[open] .offer-details {
+      max-height: 500px;
+    }
+
+    /* Kolory dla każdej oferty */
+    .offer1 summary { background: #1abc9c; }
+    .offer2 summary { background: #3498db; }
+    .offer3 summary { background: #e67e22; }
+    .offer4 summary { background: #9b59b6; }
+    .offer5 summary { background: #e74c3c; }
+
+    /* Ikony przed nazwą (unicode) */
+    .offer1 summary::before { content: "💆‍♂️ "; }
+    .offer2 summary::before { content: "🩹 "; }
+    .offer3 summary::before { content: "🏋️ "; }
+    .offer4 summary::before { content: "🧠 "; }
+    .offer5 summary::before { content: "💪 "; }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Oferta</h1>
-    <nav>
-      <a href="index.html">Strona główna</a> |
-      <a href="o-mnie.html">O mnie</a> |
-      <a href="oferta.html">Oferta</a> |
-      <a href="cennik.html">Cennik</a> |
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
+
+  <nav>
+    <a href="index.html">Strona główna</a>
+    <a href="o-mnie.html">O mnie</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="cennik.html">Cennik</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 
   <main>
-    <h2>Co oferuję</h2>
-    <p>Terapia Manulana, Terapia powięziowa 
-    <p>Suche igłowanie (dry needling)
-    <p>Terapia Funkcjonalna - kinezyterapia
-    <p>Fizjoterapia w ortopedii i neurologii
-    <p>Masaż klasyczny, sportowy</p>
-  
+    <h1>Oferta</h1>
+
+    <div class="offer offer1">
+      <details>
+        <summary>Terapia manualna i terapia powięziowa</summary>
+        <div class="offer-details">
+          <!-- Wklej tutaj krótki opis -->
+          <p>Opis terapii manualnej i powięziowej – dla kogo, czas trwania i efekty.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="offer offer2">
+      <details>
+        <summary>Suche igłowanie</summary>
+        <div class="offer-details">
+          <p>Opis suchego igłowania – wskazania, efekty, czas trwania sesji.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="offer offer3">
+      <details>
+        <summary>Terapia funkcjonalna - kinezyterapia</summary>
+        <div class="offer-details">
+          <p>Opis terapii funkcjonalnej i kinezyterapii – cele terapii, efekty, ćwiczenia.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="offer offer4">
+      <details>
+        <summary>Fizjoterapia w ortopedii i neurologii</summary>
+        <div class="offer-details">
+          <p>Opis fizjoterapii ortopedycznej i neurologicznej – dla kogo, metody, efekty.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="offer offer5">
+      <details>
+        <summary>Masaż klasyczny, sportowy</summary>
+        <div class="offer-details">
+          <p>Opis masażu klasycznego i sportowego – techniki, czas trwania, wskazania.</p>
+        </div>
+      </details>
+    </div>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Oskar Garncarz</p>
+    &copy; 2025 Oskar Garncarz | Wszelkie prawa zastrzeżone
   </footer>
+
 </body>
-
 </html>
-
-
