@@ -4,27 +4,140 @@
   <meta charset="UTF-8">
   <title>Kontakt</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+      font-size: 1.1em;
+    }
+
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Przyciski social media */
+    .social-sidebar {
+      position: fixed;
+      top: 40%;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .social-sidebar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 25px 0 0 25px;
+      text-decoration: none;
+      font-size: 20px;
+      transition: all 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .social-sidebar a:hover {
+      transform: scale(1.2);
+      background-color: #3498db;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Kontakt</h1>
-    <nav>
-      <a href="index.html">Strona główna</a> |
-      <a href="o-mnie.html">O mnie</a> |
-      <a href="oferta.html">Oferta</a> |
-      <a href="cennik.html">Cennik</a> |
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
+
+  <nav>
+    <a href="index.html">Strona główna</a>
+    <a href="o-mnie.html">O mnie</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="cennik.html">Cennik</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 
   <main>
-    <h2>Skontaktuj się ze mną</h2>
-    <p>Email: oskar.garncarz@wp.pl</p>
-    <p>Telefon: 796 348 115</p>
+    <h1>Kontakt</h1>
+
+    <div class="contact-info">
+      <p>📞 Telefon: <a href="tel:+48796348115">+48 796 348 115</a></p>
+      <p>✉️ E-mail: <a href="mailto:oskar.garncarz@wp.pl">oskar.garncarz@wp.pl</a></p>
+      <p>📍 Adres 1: ul. Michała Bobrzyńskiego 12, Kraków</p>
+      <p>📍 Adres 2: ul. Golikówka 6, Kraków</p>
+    </div>
+
   </main>
 
+  <!-- Social media po prawej stronie -->
+  <div class="social-sidebar">
+    <a href="y
+Opcje
+© 2025 WP Holding
+O nas
+Reklama
+Pomoc
+Regulamin
+Prywatność
+Poczta bez reklam? Już od 5,75 zł (z VAT) miesięcznie!
+
+Wybierz pakiet i korzystaj z poczty bez banerów oraz mailingów reklamowych od WP.
+Od:
+Ja
+15 wrz 2025 23:25 (przed chwilą)
+Do:
+mnieoskar.garncarz@wp.pl
+Temat:
+Bezpieczeństwo:
+
+Szyfrowanie TLS
+https://www.facebook.com/share/1JaMTFguc1" target="_blank" title="Facebook">f</a>
+    <a href="https://www.instagram.com/garnekzfizjo_kuznia.ruchu?igsh=MXFoeTJvMHdic2d3NA==" target="_blank" title="Instagram">i</a>
+    <!-- link do Booksy można dodać później -->
+  </div>
+
   <footer>
-    <p>&copy; 2025 Oskar Garncarz</p>
+    &copy; 2025 Moja Strona | Wszelkie prawa zastrzeżone
   </footer>
+
 </body>
 </html>
