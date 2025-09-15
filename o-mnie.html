@@ -4,22 +4,42 @@
   <meta charset="UTF-8">
   <title>O mnie</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap; /* na telefonie układa się pionowo */
+    }
+    .about-container img {
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+      text-align: justify; /* wyjustowanie tekstu */
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>O mnie</h1>
-    <nav>
-      <a href="index.html">Strona główna</a> |
-      <a href="o-mnie.html">O mnie</a> |
-      <a href="oferta.html">Oferta</a> |
-      <a href="cennik.html">Cennik</a> |
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
+
+  <nav>
+    <a href="index.html">Strona główna</a>
+    <a href="o-mnie.html">O mnie</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="cennik.html">Cennik</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 
   <main>
-    <h2>Kilka słów o mnie</h2>
-    <p>Nazywam się Oskar Garncarz  od 10 lat pracuję jako fizjoterapeuta. Moje doświadczenie zawodowe buduję w oparciu o wieloletnie zaangażowanie w sport – przez blisko 14 lat trenowałem piłkę ręczną, co pozwoliło mi nie tylko rozwinąć pasję do ruchu, ale też zrozumieć, jak istotna jest prawidłowa regeneracja, prewencja i leczenie przeciążeń oraz urazów. Z własnego doświadczenia wiem, czym jest ból, kontuzja i walka o powrót do sprawności – dlatego do każdego pacjenta podchodzę indywidualnie, z empatią i pełnym zrozumieniem.
+    <h1>O mnie</h1>
+    <div class="about-container">
+      <img src="ja.jpg" alt="Moje zdjęcie">
+      <div class="about-text">
+        <!-- 🔽 Tutaj wklej swój własny tekst "O mnie" -->
+        <p>Nazywam się Oskar Garncarz  od 10 lat pracuję jako fizjoterapeuta. Moje doświadczenie zawodowe buduję w oparciu o wieloletnie zaangażowanie w sport – przez blisko 14 lat trenowałem piłkę ręczną, co pozwoliło mi nie tylko rozwinąć pasję do ruchu, ale też zrozumieć, jak istotna jest prawidłowa regeneracja, prewencja i leczenie przeciążeń oraz urazów. Z własnego doświadczenia wiem, czym jest ból, kontuzja i walka o powrót do sprawności – dlatego do każdego pacjenta podchodzę indywidualnie, z empatią i pełnym zrozumieniem.
 
 Na przestrzeni lat miałem okazję pracować z pacjentami o bardzo zróżnicowanych potrzebach. Specjalizuję się w terapii osób z problemami neurologicznymi – takimi jak uszkodzenia rdzenia kręgowego, urazy czaszkowo-mózgowe, udary – jak również z pacjentami bólowymi oraz osobami po urazach wielonarządowych czy operacjach (zarówno ortopedycznych, jak i neurochirurgicznych).
 
@@ -27,14 +47,15 @@ Szczególną uwagę poświęcam terapii pacjentów po zabiegach w obrębie kręg
 
 Stale poszerzam swoją wiedzę i umiejętności, uczestnicząc w szkoleniach i kursach, ponieważ wierzę, że skuteczna fizjoterapia to połączenie doświadczenia, wiedzy i otwartości na nowe podejścia. Moją ambicją jest dalszy rozwój w kierunku fizjoterapii ortopedycznej i urazowej – tak, aby móc jeszcze skuteczniej wspierać pacjentów bólowych, pooperacyjnych i sportowców wracających do aktywności.
 
-Poza pracą jestem mężem i tatą – czas z rodziną to dla mnie ogromna wartość. W wolnych chwilach stawiam na aktywny wypoczynek: pływanie, jazdę na rowerze oraz wspólne wypady w góry lub nad morze. Ruch towarzyszy mi od zawsze – i tę pasję staram się przekazywać córkom i również swoim pacjentom.
-.</p>
+Poza pracą jestem mężem i tatą – czas z rodziną to dla mnie ogromna wartość. W wolnych chwilach stawiam na aktywny wypoczynek: pływanie, jazdę na rowerze oraz wspólne wypady w góry lub nad morze. Ruch towarzyszy mi od zawsze – i tę pasję staram się przekazywać córkom i również swoim pacjentom..</p>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Oskar Garncarz</p>
+    &copy; 2025 Oskar Garncarz | Wszelkie prawa zastrzeżone
   </footer>
+
 </body>
 </html>
-
 
